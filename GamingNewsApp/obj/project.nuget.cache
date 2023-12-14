@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yJqkYT2tTvnsEBqH0VSnYkwUTn+QAGvVkOdpW56zf1Bcq+IIE7fm6sCa8pwClAjy8eaZvPr60/YRG9Exx+hvgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sahan Rajapaksha\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,129 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "News";
+
+    <!-- Font Awesome -->
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          rel="stylesheet"
+        />
+        <!-- Google Fonts -->
+        <link
+          href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+          rel="stylesheet"
+        />
+        <!-- MDB -->
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.min.css"
+          rel="stylesheet"
+        />
+<body>
+        
+     <div class="container-fluid">
+        <div class="row">
+            <button id="sidebarToggle" class="btn btn-link">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar position-fixed" style="max-height:500px">
+                <div class="position-fixed">
+                    <ul class="nav  flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                Link1
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">
+                                 Link2
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div id="carouselExampleCaptions" class="carousel slide" data-mdb-ride="carousel" data-mdb-carousel-init>
+                      <div class="carousel-indicators">
+                        <button
+                          type="button"
+                          data-mdb-target="#carouselExampleCaptions"
+                          data-mdb-slide-to="0"
+                          class="active"
+                          aria-current="true"
+                          aria-label="Slide 1"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#carouselExampleCaptions"
+                          data-mdb-slide-to="1"
+                          aria-label="Slide 2"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#carouselExampleCaptions"
+                          data-mdb-slide-to="2"
+                          aria-label="Slide 3"
+                        ></button>
+                        <button
+                          type="button"
+                          data-mdb-target="#carouselExampleCaptions"
+                          data-mdb-slide-to="3"
+                          aria-label="Slide 4"
+                        ></button>
+                      </div>
+                      <div class="carousel-inner">
+                       @for(int i=0; i<4; i++)
+                            {
+                                <div class="carousel-item active">
+                                      <img src= @Model.news.Articles[i].UrlToImage class="d-block w-100" style="max-height: 600px;" alt="Wild Landscape"/>
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p> @Model.news.Articles[i].Title</p>
+                                      </div>
+                                </div>
+                            }
+                    
+                
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                   @foreach(var article in Model.news.Articles){
+                     <div class="col">
+                        <div class="card">
+                          <img src= @article.UrlToImage class="card-img-top"/>
+                          <div class="card-body">
+                            <h5 class="card-title">@article.Title</h5>
+                            <p class="card-text">
+                              @article.Content
+                            </p>
+                          </div>
+                        </div>
+                     </div>
+                    }
+                </div>
+            </main>
+             
+        
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/carousel.js"></script>
+    <script type = "text/javascript" src="./js/sidenav.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.1.0/mdb.umd.min.js"></script>
+
+</body>
+}
+
+
+
+
