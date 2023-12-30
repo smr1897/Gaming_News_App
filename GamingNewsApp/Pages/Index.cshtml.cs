@@ -7,7 +7,7 @@ namespace GamingNewsApp.Pages
 {
     public class IndexModel : PageModel
     {
-        public WorldNews news;
+        public Root news;
 
         private readonly ILogger<IndexModel> _logger;
         private readonly IGamingNewsService _gamingNewsService;

@@ -3,6 +3,7 @@
 namespace GamingNewsApp.Models
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
+    // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
     public class Article
     {
         [JsonProperty("source")]
@@ -30,7 +31,7 @@ namespace GamingNewsApp.Models
         public string Content { get; set; }
     }
 
-    public class WorldNews
+    public class Root
     {
         [JsonProperty("status")]
         public string Status { get; set; }
@@ -50,5 +51,8 @@ namespace GamingNewsApp.Models
         [JsonProperty("name")]
         public string Name { get; set; }
     }
+
+
+
 
 }

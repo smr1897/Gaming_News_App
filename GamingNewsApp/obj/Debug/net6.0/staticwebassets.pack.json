@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\GamingNewsApp.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
       "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\css\\trailers.css",
+      "PackagePath": "staticwebassets\\css\\trailers.css"
     },
     {
       "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\favicon.ico",
@@ -17,12 +25,20 @@
       "PackagePath": "staticwebassets\\js\\carousel.js"
     },
     {
+      "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
       "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\js\\sidenav.js",
       "PackagePath": "staticwebassets\\js\\sidenav.js"
     },
     {
       "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\js\\trailers.js",
+      "PackagePath": "staticwebassets\\js\\trailers.js"
     },
     {
       "Id": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\lib\\bootstrap\\LICENSE",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TyzM+TVWsfUNIDPK3aCXu4KLKos98uuK6o4MVrEIk/k=",
+  "Hash": "7MXYv0OTdxFsMufzW+5ZMSCU9uUqeliCfTL6OPtIsR0=",
   "Source": "GamingNewsApp",
   "BasePath": "_content/GamingNewsApp",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GamingNewsApp.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\css\\home.css",
+      "SourceId": "GamingNewsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\",
+      "BasePath": "_content/GamingNewsApp",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
       "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\css\\site.css",
       "SourceId": "GamingNewsApp",
       "SourceType": "Discovered",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\css\\trailers.css",
+      "SourceId": "GamingNewsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\",
+      "BasePath": "_content/GamingNewsApp",
+      "RelativePath": "css/trailers.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\trailers.css"
     },
     {
       "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\favicon.ico",
@@ -102,6 +136,23 @@
       "OriginalItemSpec": "wwwroot\\js\\carousel.js"
     },
     {
+      "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\js\\home.js",
+      "SourceId": "GamingNewsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\",
+      "BasePath": "_content/GamingNewsApp",
+      "RelativePath": "js/home.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\home.js"
+    },
+    {
       "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\js\\sidenav.js",
       "SourceId": "GamingNewsApp",
       "SourceType": "Discovered",
@@ -134,6 +185,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\js\\trailers.js",
+      "SourceId": "GamingNewsApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\",
+      "BasePath": "_content/GamingNewsApp",
+      "RelativePath": "js/trailers.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\trailers.js"
     },
     {
       "Identity": "C:\\Users\\Sahan Rajapaksha\\Documents\\C#\\GamingNewsApp\\GamingNewsApp\\GamingNewsApp\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

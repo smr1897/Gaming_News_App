@@ -5,7 +5,7 @@ namespace GamingNewsApp.Services
 {
     public interface IGamingNewsService
     {
-        WorldNews GetGamingNews();
+        Root GetGamingNews();
     }
 
     public class NewsService : IGamingNewsService
@@ -16,30 +16,30 @@ namespace GamingNewsApp.Services
             Configuration = configuration;
         }
 
-        public WorldNews GetGamingNews()
+        public Root GetGamingNews()
         {
-            string apiKey = Configuration.GetValue<string>("napk");
-            string baseurl = Configuration.GetValue<string>("newsap");
+            string apiKey = Configuration.GetValue<string>("News_Api_Key2");
+            string baseurl = Configuration.GetValue<string>("News_Api_url2");
 
             using(var client = new HttpClient()) 
             {
                 client.BaseAddress = new Uri(baseurl);
 
-                HttpResponseMessage response = client.GetAsync("?country=us&apiKey=" + apiKey).Result;
+                HttpResponseMessage response = client.GetAsync("").Result;
                 
 
                 if(response.IsSuccessStatusCode)
                 {
                     var result = response.Content.ReadAsStringAsync().Result;
-                    return JsonConvert.DeserializeObject<WorldNews>(result); //takes the json response and convert it into a WorldNews c# object
+                    return JsonConvert.DeserializeObject<Root>(result); //takes the json response and convert it into a WorldNews c# object
                 }
                 else
                 {
-                    return new WorldNews()
+                    return new Root()
                     {
                         Articles = new List<Article>(),
                         TotalResults = 0,
-                        Status = "",
+                        Status = ""
 
                     };
                 }

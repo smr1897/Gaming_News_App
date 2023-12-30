@@ -1,0 +1,302 @@
+﻿@page "/gamesHome"
+@model GamingNewsApp.Pages.GamesHomeModel
+@{
+    <link rel="stylesheet" href="css/trailers.css">
+    <link rel="stylesheet" href="css/home.css">
+    
+        <header>
+            <div class="flex">
+                <div class="logo">
+                    <a href="#"><img src="https://onclickwebdesign.com/wp-content/uploads/game_warrior_logo.png" alt="Game Warrior Logo" /></a>
+                </div>
+                <nav>
+                    <button id="nav-toggle" class="hamburger-menu">
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                        <span class="strip"></span>
+                    </button>
+                    <ul id="nav-menu-container">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <a href="#" id="login-register-button">Login / Register</a>
+            </div>
+        </header>
+
+        <main>
+            
+            <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 px-0">
+          <div class="swiper-container image-slider">
+            <div class="swiper-wrapper">
+            @for(int i=0; i<7; i++)
+            {
+                     <div class="swiper-slide">
+                <div class="img-container">
+                  <img src="@Model.games.Results[i].BackgroundImage" alt="" class="img-fluid" />
+                </div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                      <div class="wrapper">
+                        <div class="content">
+                          <div class="sub-title">
+                            <div class="text-wrapper">
+                              
+                            </div>
+                          </div>
+                          <div class="title">
+                            <div class="text-wrapper">
+                              <div class="text-inner">
+                                @Model.games.Results[i].Name
+                              </div>
+                            </div>
+                          </div>
+                          <div class="description">
+                            <div class="text-wrapper">
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="controls">
+                          <div class="swiper-button-prev ctrl prev-ctrl">
+                            <i class="material-icons icon">
+                              
+                            </i>
+                          </div>
+                          <div class="swiper-button-next ctrl next-ctrl">
+                            <i class="material-icons icon">
+                              
+                            </i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>           
+            }
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="video-sec-wrap">
+			<div class="video-sec">
+				<p class="video-sec-title">Popular Games</p>
+				<ul class="video-sec-middle" id="vid-grid">
+                @foreach(var game in Model.games.Results){
+					<li class="thumb-wrap"><a href="">
+						<img style="height:160px;" class="thumb" src="@game.BackgroundImage" alt="">
+						<div class="thumb-info">
+							<p class="thumb-title">@game.Name</p>
+							
+						</div>
+					</a></li>}
+                    </ul>
+				<a class="video-showmore">Show more</a>
+			</div>
+		</article>
+            
+
+            <section id="tournaments">
+                <div class="flex">
+                    <span class="badge tournaments">Tournaments</span>
+                    <div class="box">
+                        <span class="badge premium-tournament">Premium Tournament</span>
+                        <div class="tournaments-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/tournaments_1.jpg" />
+                        </div>
+                        <div class="tournaments-content">
+                            <h3>Starcraft 2</h3>
+                            <div><label>Tournament Begins:</label> <strong>June 20, 2019</strong></div>
+                            <div><label>Tournament Ends:</label> <strong>July 01, 2019</strong></div>
+                            <div><label>Participants:</label> <strong>10 teams</strong></div>
+                            <div><label>Tournament Organizer:</label> <strong>Admin</strong></div>
+                            <div><label class="prizes">Prizes:</label> <label>1st place $2000, 2nd place: $1000, 3rd place: $500</label></div>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="badge premium-tournament">Premium Tournament</span>
+                        <div class="tournaments-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/tournaments_2.jpg" />
+                        </div>
+                        <div class="tournaments-content">
+                            <h3>World Of Warcraft</h3>
+                            <div><label>Tournament Begins:</label> <strong>June 20, 2019</strong></div>
+                            <div><label>Tournament Ends:</label> <strong>July 01, 2019</strong></div>
+                            <div><label>Participants:</label> <strong>10 teams</strong></div>
+                            <div><label>Tournament Organizer:</label> <strong>Admin</strong></div>
+                            <div><label class="prizes">Prizes:</label> <label>1st place $2000, 2nd place: $1000, 3rd place: $500</label></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="recent-reviews">
+                <h1>Recent Reviews</h1>
+                <div class="flex">
+                    <div class="box">
+                        <span class="rating-badge gold">9.3</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_1.jpg" />
+                        </div>
+                        <div>
+                            <h4>Assasin's Creed</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge purple">9.5</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_2.jpg" />
+                        </div>
+                        <div>
+                            <h4>Doom</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge green">9.1</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_3.jpg" />
+                        </div>
+                        <div>
+                            <h4>Overwatch</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <span class="rating-badge violet">9.7</span>
+                        <div class="recent-reviews-image">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/recent_reviews_4.jpg" />
+                        </div>
+                        <div>
+                            <h4>GTA</h4>
+                            <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="posts-comments">
+                <div class="flex">
+                    <div class="game-warrior">
+                        <img src="https://onclickwebdesign.com/wp-content/uploads/footer_logo.png" />
+                        <p>Lorem ipsum dolor sit amet, consectectur adipiscing ipsum dolor sit amet.</p>
+                        <img class="footer-graphic" src="https://onclickwebdesign.com/wp-content/uploads/sword_lady_footer.png" />
+                    </div>
+
+                    <div class="posts-comments-box">
+                        <h3>Latest Posts</h3>
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_1.jpg" />
+                            <div>
+                                <h5>June 21, 2019</h5>
+                                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_2.jpg" />
+                            <div>
+                                <h5>June 21, 2019</h5>
+                                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+
+                        <div class="post-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/latest_posts_3.jpg" />
+                            <div>
+                                <h5>June 21, 2019</h5>
+                                <p>Lorem ipsum dolor sit amet, consectectur adipiscing.</p>
+                                <small>By: Admin</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="posts-comments-box">
+                        <h3>Top Comments</h3>
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_1.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2019</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_2.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2019</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_3.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2019</h5>
+                            </div>
+                        </div>
+
+                        <div class="comments-item">
+                            <img src="https://onclickwebdesign.com/wp-content/uploads/top_comments_4.jpg" />
+                            <div>
+                                <p><span class="author">James Smith</span> <span>on</span> Lorem ipsum dolor sit amet consectectur.</p>
+                                <h5>June 21, 2019</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="flex">
+                <small>Copyright &copy; 2019 All rights reserved | This template is made with <span class="footer-heart">&#9829;</span> by <a href="https://colorlib.com" target="_blank">Colorlib</a>.</small>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Games</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Forums</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function () {
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            });
+        </script>
+}
